@@ -4,7 +4,7 @@ mw:
   hosts:
     delphi.pinewood-school.gr
   vars:
-    ansible_user: chris
+    #ansible_user: chris
     ansible_python_interpreter: /usr/bin/python3
 
 ...          
