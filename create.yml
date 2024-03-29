@@ -1,23 +1,24 @@
 ---
 
-- name: create temporary files by chris
-  file:
-    path: "{{ item }}"
-    state: touch
-  with_items:
-    - "/backup/chris.txt"
+# - name: create temporary files by chris
+#   file:
+#     path: "{{ item }}"
+#     state: touch
+#   with_items:
+#     - "/backup/chris.txt"
 
-- name : Create/fill a File with Content
-  copy:
-    dest: /backup/chris.txt
-    content: |
-      This is first line
-      This is second line
+# - name : Create/fill a File with Content
+#   copy:
+#     dest: /backup/chris.txt
+#     content: |
+#       This is first line
+#       This is second line
 
 - name: Install atd service
   package:
     name: at
     state: present
+    disable_recommends: false
   become: true
 
 - name: Enable atd service
