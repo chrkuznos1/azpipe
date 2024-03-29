@@ -6,6 +6,5 @@ mw:
   vars:
     ansible_user: chris
     ansible_python_interpreter: /usr/bin/python3
-    #ansible_ssh_pass: Logismos.2019
 
 ...          
