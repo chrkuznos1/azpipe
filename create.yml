@@ -15,9 +15,10 @@
       This is second line
 
 - name: Install atd service
-  zypper:
+  package:
     name: at
     state: present
+  become: true
 
 - name: Enable atd service
   systemd:
