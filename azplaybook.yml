@@ -1,0 +1,8 @@
+---
+
+- hosts : mw
+  become : true
+  tasks:
+    - name: call the file
+      import_tasks: create.yml
+...  

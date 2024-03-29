@@ -1,0 +1,10 @@
+---
+
+- name: create temporary files by chris
+  file:
+    path: "{{ item }}"
+    state: file
+  with_items:
+    - "/backup/chris.txt"
+
+...
