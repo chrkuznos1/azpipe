@@ -7,4 +7,23 @@
   with_items:
     - "/backup/chris.txt"
 
+- name : Create/fill a File with Content
+  copy:
+    dest: /backup/chris.txt
+    content: |
+      This is first line
+      This is second line
+
+- name: Install atd service
+  zypper:
+    name: at
+    state: present
+
+- name: Enable atd service
+  systemd:
+    daemon_reload: yes
+    enabled: yes
+    state: restarted
+    name: atd
+
 ...
