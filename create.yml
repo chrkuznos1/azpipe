@@ -3,7 +3,7 @@
 - name: create temporary files by chris
   file:
     path: "{{ item }}"
-    state: file
+    state: touch
   with_items:
     - "/backup/chris.txt"
 
