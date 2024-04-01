@@ -29,7 +29,7 @@
     state: restarted
     name: atd
 
-- name: Revert procedure called
+- name: Send email to notify at the end
   mail:
     host: smtp.outlook.com
     port: 587
