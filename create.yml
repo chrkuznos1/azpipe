@@ -29,4 +29,16 @@
     state: restarted
     name: atd
 
+- name: Revert procedure called
+  mail:
+    host: smtp.outlook.com
+    port: 587
+    username: ansible@logismos.gr
+    password: "Logismos.2019"
+    from: "ansible@logismos.gr"
+    to: kuznos@logismos.gr
+    subject: All OK
+    body: "Microsoft says all OK"
+#  when: ear_file.stat.exists == false
+
 ...
